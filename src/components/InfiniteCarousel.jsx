@@ -21,7 +21,7 @@ function InfitieCarousel() {
         <div className="w-full inline-flex justify-start flex-nowrap overflow-hidden mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-128px),transparent_100%)]">
             <ul className="flex items-center justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
                 {logos.map((logo, index) => (
-                    <li key={index} className='w-15 lg:w-25'>
+                    <li key={index} className='w-15 lg:w-25 shrink-0'>
                         <img src={logo.src} 
                              alt={logo.alt} 
                              loading="eager" 
@@ -35,7 +35,7 @@ function InfitieCarousel() {
 
             <ul className="flex items-center justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
                 {logos.map((logo, index) => (
-                    <li key={index} className='w-15 lg:w-25'>
+                    <li key={index} className='w-15 lg:w-25 shrink-0'>
                         <img src={logo.src}
                             alt={logo.alt}
                             loading='eager'
