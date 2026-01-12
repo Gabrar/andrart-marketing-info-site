@@ -1,5 +1,3 @@
-import Logo from "../public/assets/logo.jpg"
-import Andre from "../public/assets/andre.png"
 import InfitieCarousel from "./components/InfiniteCarousel"
 
 function App() {
@@ -9,7 +7,7 @@ function App() {
       <section className="">
         <header className="flex gap-2 items-center justify-center lg:items-start space-y-1 mx-auto lg:mx-0">
           <div className="flex">
-            <img src={Logo} className="h-14 w-auto object-contain xl:h-30" />
+            <img src="assets/logo.jpg" className="h-14 w-auto object-contain xl:h-30" />
             <div className="flex flex-col justify-center -space-y-1">
               <span className="font-montserrat font-bold text-2xl tracking-wide">
                 Andrart
@@ -21,7 +19,7 @@ function App() {
           </div>
 
           <div className="ml-auto hidden lg:flex">
-            <button className="text-xs bg-linear-to-r from-[#c73433] to-[#f3a73a] to-[#f3a73a] rounded-lg h-full p-2 cursor-pointer hover:scale-110 m-5 xl:p-3 xl:text-lg">ENTRE EM CONTATO</button>
+            <button className="text-xs bg-linear-to-r from-[#c73433] to-[#f3a73a] rounded-lg h-full p-2 cursor-pointer hover:scale-110 m-5 xl:p-3 xl:text-lg">ENTRE EM CONTATO</button>
           </div>
         </header>
 
@@ -51,8 +49,8 @@ function App() {
               <div className="animate-fade-in ml-auto lg:w-full flex justify-center lg:ml-0">
 
                 <div className="animate-right">
-                  <div className="relative bg-linear-to-r from-[#c73433] to-[#e37035] to-[#f3a73a] rounded-2xl">
-                    <img src={Andre} className="relative h-50 w-auto xl:h-127 lg:h-100 md:h-90 object-cover" />
+                  <div className="relative bg-linear-to-r from-[#c73433] via-[#e37035] to-[#f3a73a] rounded-2xl">
+                    <img src="assets/andre.png" className="relative h-50 w-auto xl:h-127 lg:h-100 md:h-90 object-cover" />
                     <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/20 to-black h-full w-full"></div>
                   </div>
 
