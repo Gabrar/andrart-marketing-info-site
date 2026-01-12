@@ -22,7 +22,13 @@ function InfitieCarousel() {
             <ul className="flex items-center justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
                 {logos.map((logo, index) => (
                     <li key={index} className='w-15 lg:w-25'>
-                        <img src={logo.src} alt={logo.alt} loading="eager" className="h-16 lg:h-24 w-auto" />
+                        <img src={logo.src} 
+                             alt={logo.alt} 
+                             loading="eager" 
+                             className="h-16 lg:h-24 w-auto object-contain" 
+                             width="120"
+                             height="100"
+                             />
                     </li>
                 ))}
             </ul>
@@ -30,7 +36,13 @@ function InfitieCarousel() {
             <ul className="flex items-center justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
                 {logos.map((logo, index) => (
                     <li key={index} className='w-15 lg:w-25'>
-                        <img src={logo.src} alt={logo.alt} loading='eager' className="h-16 lg:h-24 w-auto" />
+                        <img src={logo.src}
+                            alt={logo.alt}
+                            loading='eager'
+                            className="h-16 lg:h-24 w-auto object-contain"
+                            width="120"
+                            height="100"
+                        />
                     </li>
                 ))}
             </ul>
