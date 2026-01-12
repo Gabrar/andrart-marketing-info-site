@@ -35,6 +35,14 @@ function InfitieCarousel() {
                 ))}
             </ul>
 
+            <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+                {logos.map((logo, index) => (
+                    <li key={index}>
+                        <img src={logo.src} alt={logo.alt} className="h-16 lg:h-24 w-auto" />
+                    </li>
+                ))}
+            </ul>
+
 
         </div>
     )
