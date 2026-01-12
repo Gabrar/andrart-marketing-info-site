@@ -19,18 +19,18 @@ function InfitieCarousel() {
 
     return (
         <div className="w-full inline-flex justify-start flex-nowrap overflow-hidden mask-[linear-gradient(to_right,transparent_0,black_128px,black_calc(100%-128px),transparent_100%)]">
-            <ul className="flex items-center justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll shrink-0" aria-hidden="true">
+            <ul className="flex items-center justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
                 {logos.map((logo, index) => (
-                    <li key={index}>
-                        <img src={logo.src} alt={logo.alt} className="h-16 lg:h-24 w-auto" />
+                    <li key={index} className='w-15 lg:w-25'>
+                        <img src={logo.src} alt={logo.alt} loading="eager" className="h-16 lg:h-24 w-auto" />
                     </li>
                 ))}
             </ul>
 
-            <ul className="flex items-center justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll shrink-0" aria-hidden="true">
+            <ul className="flex items-center justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
                 {logos.map((logo, index) => (
-                    <li key={index}>
-                        <img src={logo.src} alt={logo.alt} className="h-16 lg:h-24 w-auto" />
+                    <li key={index} className='w-15 lg:w-25'>
+                        <img src={logo.src} alt={logo.alt} loading='eager' className="h-16 lg:h-24 w-auto" />
                     </li>
                 ))}
             </ul>
